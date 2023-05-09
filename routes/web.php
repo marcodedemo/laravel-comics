@@ -13,6 +13,28 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+$links = [
+
+    'Charaters',
+    'Comics',
+    'Movies',
+    'Tv',
+    'Games',
+    'Collectibles',
+    'Videos',
+    'Fans',
+    'News',
+    'Shop',
+
+];
+
+Route::get('/', function () use ($links) {
+
+    $data = [
+
+        'links' => $links,
+    ];
+
+
+    return view('home', $data);
 });

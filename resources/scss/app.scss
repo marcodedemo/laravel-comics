@@ -1,1 +1,66 @@
 @import '~bootstrap/scss/bootstrap';
+
+
+
+header{
+
+    #top-links{
+        background-color: #0082f9;
+        color: white;
+
+        a{
+            color: white;
+            text-decoration: none;
+            font-size: .8em;
+        }
+    }
+
+    nav{
+
+        height: 140px;
+
+        #nav-logo{
+            width: 100px;
+        }
+
+        #nav-links{
+            
+            ul{
+                list-style-type: none;
+                margin-bottom: 0;
+
+                a{
+                    text-decoration: none;
+                    color: black;
+                    text-transform: uppercase;
+                    font-weight: bold;
+
+                    padding: 0 10px;
+                }
+            }
+        }
+
+        #nav-search{
+            input{
+                width: 150px;
+
+                background-color: transparent;
+
+                outline: none;
+
+                border: none;
+                border-bottom: 1px solid #0082f9;
+
+                padding-left: calc(100% - 60px);
+
+
+            }
+        }
+    }
+}
+
+
+
+footer{
+    
+}
