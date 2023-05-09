@@ -17,7 +17,7 @@
     <nav class="d-flex justify-content-center align-items-center">
 
 
-        <div class="container d-flex justify-content-center align-items-center gap-3">
+        <div class="container d-flex justify-content-center align-items-center gap-4">
 
 
             {{-- logo --}}
