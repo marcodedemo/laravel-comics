@@ -88,11 +88,14 @@ $footerLinks = [
 Route::get('/', function () use ($links, $footerLinks) {
 
 
+    $comics = config('comics');
+
 
     $data = [
 
         'links' => $links,
-        'footerLinks' => $footerLinks
+        'footerLinks' => $footerLinks,
+        'comics'=> $comics,
     ];
 
 
