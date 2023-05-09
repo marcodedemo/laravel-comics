@@ -28,11 +28,71 @@ $links = [
 
 ];
 
-Route::get('/', function () use ($links) {
+$footerLinks = [
+
+    [
+
+        'title' => "dc comics",
+        'links' =>[
+            "Charaters",
+            "Comics",
+            "Movies",
+            "TV",
+            "Games",
+            "Videos",
+            "News"
+        ]
+    ],
+    [
+
+        'title'=> "shop",
+        'links' => [
+            "Shop DC",
+            "Shop DC Collectibles",
+            
+        ]
+    
+    ],
+    [
+        'title'=>"DC",
+        'links' => [
+            "Terms Of Use",
+            "Privacy policy(New)",
+            "Ad Choises",
+            "Advertising",
+            "Jobs",
+            "Subscriptions",
+            "Talent Workshops",
+            "CPSC Certificates",
+            "Ratings",
+            "Show Help",
+            "Contact Us",
+
+
+        ]
+    ],
+    [
+        'title'=>"Sites",
+        'links' => [
+            "DC",
+            "MAD Magazine",
+            "DC Kids",
+            "DC Universe",
+            "DC Power Visa",
+        ]
+    ]
+];
+
+
+
+Route::get('/', function () use ($links, $footerLinks) {
+
+
 
     $data = [
 
         'links' => $links,
+        'footerLinks' => $footerLinks
     ];
 
 
