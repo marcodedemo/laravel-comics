@@ -38,7 +38,7 @@
             </div>
 
             <div id="button-container" class="text-center">
-                <button>Load More</button>
+                <a href="{{route('page2')}}"><button>Vai alla pagina 2</button></a>
             </div>
 
         </div>

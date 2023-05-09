@@ -100,4 +100,23 @@ Route::get('/', function () use ($links, $footerLinks) {
 
 
     return view('home', $data);
-});
+})->name('home');
+
+
+
+Route::get('/page-2', function () use ($links, $footerLinks) {
+
+
+    $comics = config('comics');
+
+
+    $data = [
+
+        'links' => $links,
+        'footerLinks' => $footerLinks,
+        'comics'=> $comics,
+    ];
+
+
+    return view('page2', $data);
+})->name('page2');
