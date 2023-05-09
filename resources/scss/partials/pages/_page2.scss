@@ -1,22 +1,107 @@
 
 #page2-main{
     
-    background-color: #0583f9bf;
     
 
-    #back-home{
-        height: 800px;
+    #jumbo{
+        width: 100%;
+        height: 400px;
+    
+        background-image: url('../img/jumbotron.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-        button{
-            border: 1px solid white;
-            border-radius: 10px;
+    #back-to-homepage{
 
-            background-color: transparent;
+        background-color: #0582f9;
 
-            color: white;
+        height: 80px;
 
-            padding: 10px 50px;
+        #back-home{
+
+            position: relative;
+            
+            button{
+                border: 1px solid white;
+                border-radius: 10px;
+                
+                background-color: transparent;
+                
+                color: white;
+                
+                padding: 10px 50px;
+            }
+
+
+            #series-cover-container{
+
+                width: 200px;
+                height: 300px;
+
+                position: absolute;
+                left: 0;
+                top: 0;
+
+                transform: translateY(-250px);
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    
+                    object-fit: cover;
+                }
+            }
+            
         }
 
+
+    }
+
+   #comic-info{
+    
+        #comic-text-info{
+            
+            width: calc(100% * 3 / 5);
+
+            h2{
+                color: #023f5e;
+                text-transform: uppercase;
+            }
+
+            #buy-info{
+
+                div.green{
+                    background-color: #56ba59;
+                    border: .2px solid #033a05;
+                    padding: 10px;
+                    color: #9de2a0;
+
+                    span{
+                        color: white;
+                    }
+                }
+            }
+
+            #caption{
+                p{
+                    line-height: 2em;
+                }
+            }
+        } 
+
+        #comic-img-info{
+            width: calc(100% * 2 / 5);
+
+            span{
+                text-transform: uppercase;
+                font-weight: bold;
+            }
+
+            img{
+                width: 400px;
+            }
+            
+        }
     }
 }
